@@ -1,0 +1,36 @@
+
+.suggestions-wrapper {
+        margin-top: 40px;
+
+    & > .suggestions-list {
+        border-top-width: 0;
+        list-style: none;
+        margin-top: 0;
+        overflow-y: auto;
+        padding: 0;
+        width: 100%;
+
+        & > li {
+            font-size: 1.8rem;
+            padding: 0.5rem;
+            color: #808080;
+
+            &:hover {
+                cursor: pointer;
+                background-color: rgb(19, 19, 19);
+                color: #fff;
+            }
+
+            & > .match-text {
+                color: orange;
+            }
+        }
+    }
+
+    .no-suggestions {
+        color: #999;
+        padding: 20px;
+        font-size: 1.6rem;
+        font-style: italic;;
+    }
+}
